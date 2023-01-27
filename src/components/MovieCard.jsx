@@ -11,7 +11,6 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import apiConfig from "../api/apiConfig";
 import { ModalContext, PlaylistContext } from "../contexts";
-import useSetLocalStore from "../hooks/useSetLocalStore";
 
 export const CardHeight = 250;
 

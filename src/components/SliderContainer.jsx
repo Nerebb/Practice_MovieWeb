@@ -34,7 +34,7 @@ function SliderContainer({ ...props }) {
       setListedMovie(response.results);
     };
     getList();
-  }, []);
+  }, [props]);
 
   return (
     <Swiper
