@@ -5,17 +5,6 @@ import MainBanner from "../components/MainBanner";
 import Section from "../layouts/Section";
 // const axiosClient = axios.create({})
 function HomePage() {
-  React.useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch(apiConfig.test());
-        console.log(res);
-      } catch (error) {
-        console.log("🚀 ~ file: HomePage.jsx:14 ~ fetchData ~ error", error);
-      }
-    };
-    fetchData();
-  }, []);
   return (
     <div className="scrollbar">
       <MainBanner />
