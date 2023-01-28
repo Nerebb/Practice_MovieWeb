@@ -6,6 +6,7 @@ const apiConfig = {
   apiKey: API_KEY,
   originalImage: (imgPath) => `https://image.tmdb.org/t/p/original/${imgPath}`,
   w500Image: (imgPath) => `https://image.tmdb.org/t/p/w500/${imgPath}`,
+  test: () => `https://metanode.co/json/eng.json`
 };
 
 export default apiConfig;
