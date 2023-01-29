@@ -14,6 +14,7 @@ import tmdbApi, { category } from "../api/tmdbApi";
 
 function SliderContainer({ ...props }) {
   const [listedMovie, setListedMovie] = useState([]);
+  console.log("🚀 ~ file: SliderContainer.jsx:17 ~ SliderContainer ~ listedMovie", listedMovie)
 
   useEffect(() => {
     const getList = async () => {
@@ -34,7 +35,7 @@ function SliderContainer({ ...props }) {
       setListedMovie(response.results);
     };
     getList();
-  }, []);
+  }, [props.category, props.id, props.type]);
 
   return (
     <Swiper

@@ -1,5 +1,4 @@
 import React from "react";
-import apiConfig from "../api/apiConfig";
 import { category, movieType } from "../api/tmdbApi";
 import MainBanner from "../components/MainBanner";
 import Section from "../layouts/Section";
